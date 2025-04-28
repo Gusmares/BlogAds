@@ -13,6 +13,7 @@ $posts = array_diff(scandir('posts'), array('..', '.'));
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -25,22 +26,22 @@ $posts = array_diff(scandir('posts'), array('..', '.'));
             <a href="#">Teste2</a>
             <a href="#">Teste3</a>
             <a href="#">Teste4</a>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
     <main class="content">
         <?php
-        // Para cada post, leia o conteúdo do arquivo e converta Markdown para HTML
         foreach ($posts as $post) {
-            // Lê o conteúdo do arquivo Markdown
             $content = file_get_contents("posts/$post");
             
-            // Converte o conteúdo Markdown para HTML
             $htmlContent = $parsedown->text($content);
 
             echo "<article class='post'>";
-            echo "<h2>" . ucfirst(str_replace('.md', '', $post)) . "</h2>"; // Nome do arquivo sem extensão
-            echo "<div>$htmlContent</div>"; // Exibe o conteúdo HTML gerado
+            echo "<h2>" . ucfirst(str_replace('.md', '', $post)) . "</h2>";
+            echo "<div>$htmlContent</div>"; 
             echo "</article>";
         }
         ?>
