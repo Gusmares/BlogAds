@@ -24,23 +24,23 @@ Blog acadêmico da turma de ADS DevWave3, desenvolvido com PHP, Markdown e CSS m
 
 ## 📦 Estrutura do Projeto
 
-brog-devwave3/
-├── posts/ # Pasta de artigos em Markdown
-├── libs/
-│ └── Parsedown.php # Parser de Markdown
-├── index.php # Página principal
-├── style.css # Estilos principais
-├── script.js # Interatividade
-└── README.md # Este arquivo
+brog-devwave3/ ├── posts/ # Pasta de artigos em Markdown ├── libs/ │ └── Parsedown.php # Parser de Markdown ├── index.php # Página principal ├── style.css # Estilos principais ├── script.js # Interatividade └── README.md # Este arquivo
 
 
-🎨 Paleta de Cores
-Cor	Hexadecimal
-Concreto Queimado	#5c4d42
-Branco	#ffffff
-Destaque	#8a7a6f
+## 🎨 Paleta de Cores
 
-📝 Licença
+| Cor               | Hexadecimal |
+|-------------------|-------------|
+| Concreto Queimado | #5c4d42     |
+| Branco            | #ffffff     |
+| Destaque          | #8a7a6f     |
+
+## 📝 Licença
+
 Este projeto está sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
-<div align="center"> <p>Desenvolvido com ❤️ pela turma de <b>ADS DevWave3</b></p> <img src="https://img.shields.io/badge/Made%20with-PHP-777BB4?style=flat&logo=php" alt="PHP"> <img src="https://img.shields.io/badge/Made%20with-Markdown-000000?style=flat&logo=markdown" alt="Markdown"> </div> ```
+<div align="center">
+  <p>Desenvolvido com ❤️ pela turma de <b>ADS DevWave3</b></p>
+  <img src="https://img.shields.io/badge/Made%20with-PHP-777BB4?style=flat&logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/Made%20with-Markdown-000000?style=flat&logo=markdown" alt="Markdown">
+</div>
